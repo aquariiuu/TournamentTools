@@ -83,7 +83,7 @@
         padding: 10px;
         border: 1px solid black;
         }
-        .boxes{                
+        #Leaderboard{                
         border-radius: 7px;
         box-shadow: 0px 0px 2px 0px  #eedeee;
         width: 300px;
@@ -111,10 +111,11 @@
         height: 40px;
         border-radius: 50%;
         box-shadow: 0px 0px 3px 1px #debede;
+        display: inline;
         }
         .stats{
         width: 100%;
-        display: grid;
+        display: inline-grid;
         grid-template-columns: 60% 40%;
         place-items: center;
         }   
@@ -128,7 +129,7 @@
 </head>
 <body>
     <div class="player" id="PlayerTemplate" ><!--style="display: none"-->
-        <img class="pfp" src="https://i.imgur.com/iRDpe0R.jpeg">
+        <img class="pfp" src="C:\Users\hue24\Downloads\Untitled(1).png">
         <div class="stats">
         <span class="name">PlayerName</span>
         <div class="deets">
@@ -268,7 +269,7 @@
                     var newPlayerCombo = newPlayer.getElementsByClassName("combo")[0];
                     newPlayerCombo.classList.add("Combo" + scoresaber_id);
                     newPlayerCombo.style.opacity = "1";
-                    newPlayer.style.display = "block";
+                    //newPlayer.style.display = "block";
                     newPlayer.style.top = 1000 + order * 72 + "px";
                     newPlayer.style.left = "-417.5px";
                     newPlayer.classList.add('player');
@@ -290,7 +291,7 @@
                     var newPlayer2Combo = newPlayer2.getElementsByClassName("combo")[0];
                     newPlayer2Combo.classList.add("Combo2" + scoresaber_id);
                     newPlayer2Combo.style.opacity = "1";
-                    newPlayer2.style.display = "block";
+                    //newPlayer2.style.display = "block";
                     newPlayer2.style.right = "-417.5px";
                     newPlayer2.classList.add('player');
                     newPlayer2.classList.add('playerLoser');

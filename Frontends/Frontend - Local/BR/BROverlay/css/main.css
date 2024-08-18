@@ -12,7 +12,7 @@ body {
   position: absolute;
   top: 0px;
   left: 0px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .CastersDiv {
   width: 313px;
@@ -26,7 +26,7 @@ body {
 .CastersBG {
   width: 313px;
   height: 237px;
-  background: linear-gradient(rgba(14,14,14,1) 80%, #6f89a3);
+  background: linear-gradient(#eedeee, #6f89a3);
   opacity: 1;
   position: absolute;
   top: 0px;
@@ -35,7 +35,7 @@ body {
 }
 .CastersText {
   width: 143px;
-  color: rgba(255,255,255,1);
+  color: black;
   position: absolute;
   top: 7px;
   left: 6px;
@@ -55,10 +55,21 @@ body {
   left: 0px;
   overflow: hidden;
 }
+.Top15Div > div{
+  background-image: -webkit-linear-gradient(white, #efefef);
+  padding: 10px;
+  font-family: sans-serif;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  place-items: center;
+}
+.Top15Div > div:nth-child(odd){
+  background-image: -webkit-linear-gradient(grey, #white);
+}
 .Top1Div {
   width: 313px;
   height: 54px;
-  background: linear-gradient(rgba(255,215,0,1), rgba(97,82,0,1));
   opacity: 1;
   position: absolute;
   top: 50px;
@@ -68,7 +79,6 @@ body {
 .Top2Div {
   width: 313px;
   height: 54px;
-  background: linear-gradient(rgba(255,255,255,1), rgba(79,79,79,1));
   opacity: 1;
   position: absolute;
   top: 106px;
@@ -78,7 +88,6 @@ body {
 .Top3Div {
   width: 313px;
   height: 54px;
-  background: linear-gradient(rgba(205,127,50,1), rgba(62,38,14,1));
   opacity: 1;
   position: absolute;
   top: 162px;
@@ -88,7 +97,7 @@ body {
 .Top15BG {
   width: 313px;
   height: 673px;
-  background: linear-gradient(rgb(14 14 14 / 80%) 0%, #6f89a3cc);
+  background: linear-gradient(rgb(14 14 14 ) 0%, #aebdcd);
   opacity: 1;
   position: absolute;
   top: 219px;
@@ -405,4 +414,48 @@ body {
   top: 0px;
   left: 0px;
   overflow: hidden;
+}
+
+#test-box{
+  padding: 10px;
+  border: 1px solid black;
+}
+.boxes{                
+  border-radius: 7px;
+  box-shadow: 0px 0px 2px 0px  #eedeee;
+  width: 300px;
+}
+.box:first-child{
+  border-radius: 7px 7px 0px 0px;
+}
+.box:last-child{
+  border-radius: 0px 0px 7px 7px;
+}
+.box{
+  background-image: -webkit-linear-gradient(white, #efefef);
+  padding: 10px;
+  font-family: sans-serif;
+  margin: 0px;
+  width: 280px;
+  height: 40px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  place-items: center;
+}
+.img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px 1px #debede;
+}
+.stats{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  place-items: center;
+}
+.name{
+  font-weight: bold;
+  font-size: 25px;
+  width: 100%;
 }

@@ -34,7 +34,7 @@ body {
   overflow: hidden;
 }
 .CastersText {
-  width: 143px;
+  width: 313px;
   color: black;
   position: absolute;
   top: 7px;
@@ -44,7 +44,7 @@ body {
   font-weight: SemiBold;
   font-size: 32px;
   opacity: 1;
-  text-align: left;
+  text-align: center;
 }
 .Top15Div {
   width: 313px;
@@ -129,7 +129,7 @@ body {
 .Bottom15BG {
   width: 314px;
   height: 841px;
-  background: linear-gradient(rgb(14 14 14 / 80%) 0%, rgb(111 137 163 / 80%));
+  background: linear-gradient(#efefef, rgb(111 137 163));
   opacity: 1;
   position: absolute;
   top: 239px;
@@ -295,6 +295,7 @@ body {
   top: 8px;
   left: 326px;
   overflow: hidden;
+  border-radius: 5px;
 }
 .SpectatingTextDiv {
   width: 201px;
@@ -305,6 +306,7 @@ body {
   top: 0px;
   left: 0px;
   overflow: hidden;
+  border-radius: 5px;
 }
 .SpectatedPlayerDiv {
   width: 427px;
@@ -315,6 +317,7 @@ body {
   top: 0px;
   left: 211px;
   overflow: hidden;
+  border-radius: 5px;
 }
 .SpectatingText {
   width: 217px;
@@ -344,6 +347,8 @@ body {
   text-align: left;
 	transition-timing-function: ease-in-out;
 	transition: opacity 1s;
+  border-radius: 5px;
+  
 }
 .PlayersRemDiv {
   width: 404px;
@@ -363,6 +368,7 @@ body {
   top: 0px;
   left: 0px;
   overflow: hidden;
+  border-radius: 5px;
 }
 .PlayersRemTextDiv {
   width: 319px;
@@ -373,6 +379,7 @@ body {
   top: 0px;
   left: 85px;
   overflow: hidden;
+  border-radius: 5px;
 }
 .PlayerRemText {
   width: 309px;

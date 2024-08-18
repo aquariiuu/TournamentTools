@@ -18,7 +18,7 @@ export default {
         port: 2223
     },
     TA: {
-        ip: 'ws://tournamentassistant.net',
+        ip: 'ws://megamaz.me',
         port: 2053,
         password: ''
     },

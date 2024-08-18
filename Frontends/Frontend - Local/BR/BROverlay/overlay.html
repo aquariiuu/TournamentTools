@@ -9,7 +9,7 @@
             overflow: hidden;
         }
 
-        .pfp {
+        /*.pfp {
             float: left;
             margin-left: 4px;
             margin-top: 6px;
@@ -78,19 +78,65 @@
             margin-bottom: 0;
             opacity: 0;
             transition: opacity 0.4s;
+        }*/
+        #test-box{
+        padding: 10px;
+        border: 1px solid black;
+        }
+        .boxes{                
+        border-radius: 7px;
+        box-shadow: 0px 0px 2px 0px  #eedeee;
+        width: 300px;
+        }
+        .box:first-child{
+        border-radius: 7px 7px 0px 0px;
+        }
+        .box:last-child{
+        border-radius: 0px 0px 7px 7px;
+        }
+        .player{
+        background-image: -webkit-linear-gradient(white, #efefef);
+        padding: 10px;
+        font-family: sans-serif;
+        margin: 0px;
+        width: 280px;
+        height: 40px;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        place-items: center;
+        border-radius: 7px;
+        }
+        .pfp{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 3px 1px #debede;
+        }
+        .stats{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        place-items: center;
+        }   
+        .name{
+        font-weight: bold;
+        font-size: 25px;
+        width: 100%;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="player" id="PlayerTemplate" style="display: none">
+    <div class="player" id="PlayerTemplate" ><!--style="display: none"-->
         <img class="pfp" src="https://i.imgur.com/iRDpe0R.jpeg">
-        <h2 class="name">PlayerName</h2>
-        <div class="bottomRow">
-            <h2 class="accuracy">0.00%</h2>
-            <h2 class="combo">0x</h2>
+        <div class="stats">
+        <span class="name">PlayerName</span>
+        <div class="deets">
+            <span class="accuracy">0.00%</span><br>
+            <span class="combo">0x</span>
         </div>
-        <div class="background"></div>
+        </div>
+        <!--<div class="background"></div>-->
     </div>
     <div id="Leaderboard">
     </div>

@@ -130,7 +130,7 @@ const start = async () => {
             ws.send(JSON.stringify({ Type: '1', overlay: 'BattleRoyale', userid: userIds, order: 1 }));
         }
         if (mode == "VERSUS" || debug) {
-            const matchData = { matchId: match.guid, coordinator: { name: coordinatorName, id: coordinatorID }, players: matchPlayers };
+            const matchData = { matchId: match.guid, coordinator: { name: coordinatorName, guid: coordinatorID }, players: matchPlayers };
             ws.send(
                 JSON.stringify({ Type: '1', overlay: 'VERSUS', message: { matchData, teams: tournament.settings!.teams } }, (_, value) =>
                     typeof value === 'bigint'

@@ -18,10 +18,11 @@ export default {
         port: 2223
     },
     TA: {
-        ip: 'ws://megamaz.me',
-        port: 2053,
-        password: ''
+        ip: 'dev.tournamentassistant.net',
+        port: '8676',
+        token: 'readonly',
+        tourneyName: 'Moon\'s Test Tourney'
     },
     Gamemode: "VERSUS",
-    Modals: false,
+    // Modals: false,
 };
